@@ -55,6 +55,6 @@ export default {
   target: 'static',
 
   router: {
-    base: '/josue0117.github.io/'
+    base: '/josue0117.github.io'
   }
 }
