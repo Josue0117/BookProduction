@@ -29,13 +29,13 @@
                 context="static-page"
               />
             </div>
-            <div class="col-6">
+            <!--- <div class="col-6">
               <Paragraph
                 :title="simulatorCaracteristicsTtitle"
                 :content="simulatorCaracteristicsContent"
                 context="static-page"
               />
-            </div>
+            </div> --->
           </div>
         </div>
         <div class="row"></div>
