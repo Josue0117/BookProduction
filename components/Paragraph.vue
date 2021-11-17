@@ -85,11 +85,11 @@ export default {
 
 <style scoped>
 .static-page .paragraph-title span {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .static-page .paragraph-content span {
-  font-size: 18px;
+  font-size: 15px;
   color: #aa9f9f;
 }
 
@@ -125,6 +125,6 @@ export default {
 
 img {
   width: 100%;
-  padding: 15%;
+  padding: 25%;
 }
 </style>

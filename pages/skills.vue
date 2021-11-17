@@ -111,6 +111,10 @@ p.domain-value {
   color: #aa9f9f;
 }
 
+p.domain-value ul li span {
+  font-size: 15px;
+}
+
 .high {
   color: green;
   font-weight: bolder;
