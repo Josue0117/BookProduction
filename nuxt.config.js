@@ -1,3 +1,9 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/BookProduction/'
+  }
+} : {}
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -54,7 +60,5 @@ export default {
 
   target: 'static',
 
-  router: {
-    base: '/josue0117.github.io'
-  }
+  ...routerBase
 }
