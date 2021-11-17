@@ -1,6 +1,5 @@
 // NAVBAR
-export const NAVBAR_TITLE = 'Josué Hernández'
-export const NAVBAR_SUBTITLE = 'Book'
+export const NAVBAR_TITLE = 'Book'
 
 // ABOUT ME
 export const TITLE_CARD_1 = 'Josué Hernández'

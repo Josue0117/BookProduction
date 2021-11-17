@@ -1,10 +1,8 @@
 <template>
-  <div class="content">
+  <div class="content navbar-container">
     <nav class="navbar navbar-expand-lg">
-      <div class="title">
-        <p v-if="title != aboutOptionText" class="navbar-title" id="background">{{ title }}</p>
-        <p v-else class="navbar-title">{{ title }}</p>
-        <p class="navbar-subtitle">{{ subtitle }}</p>
+      <div class="title background">
+        <p class="navbar-title">{{ title }}</p>
       </div>
       <button class="navbar-toggler" @click="showMenu">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +23,8 @@
             </NuxtLink>
           </li>
           <li class="nav-item">
-            <div v-bind:class="{selected: (title === skillOptionText)}">
+            <!--- TO DO: Make this navBar option be color:white if is the current page --->
+            <div v-bind:class="{selected: (this.$route.path === '/' + skillOptionText)}">
               <NuxtLink 
                 class="nav-link" 
                 to="/skills"
@@ -33,15 +32,17 @@
             </div>
           </li>
           <li class="nav-item">
-            <div v-bind:class="{selected: (title === aboutOptionText)}">
+            <!--- TO DO: Make this navBar option be color:white if is the current page --->
+            <div v-bind:class="{selected: (this.$route.path === '/' + aboutOptionText)}">
               <NuxtLink 
                 class="nav-link" 
                 to="/about-me"
-              >Acerca de mi</NuxtLink>
+              >{{ aboutOptionText }}</NuxtLink>
             </div>
           </li>
           <li class="nav-item">
-            <div v-bind:class="{selected: (title === proyectsOptionText)}">
+            <!--- TO DO: Make this navBar option be color:white if is the current page --->
+            <div v-bind:class="{selected: (this.$route.path === '/' + proyectsOptionText)}">
               <NuxtLink 
                 class="nav-link" 
                 to="/proyects"
@@ -56,7 +57,7 @@
 
 <script>
 import { 
-  TITLE_CARD_1,
+  ABOUT_ME_TITLE,
   TITLE_CARD_2,
   TITLE_CARD_3,
 } from '@/constants-static-texts.js'
@@ -65,17 +66,13 @@ export default {
     title: {
       type: String,
       default:''
-    },
-    subtitle: {
-      type: String,
-      default:''
     }
   },
   data: () => {
     return {
       skillOptionText: TITLE_CARD_2,
-      aboutOptionText: TITLE_CARD_1,
-      proyectsOptionText: TITLE_CARD_3,
+      aboutOptionText: ABOUT_ME_TITLE,
+      proyectsOptionText: TITLE_CARD_3
     }
   },
   methods: {
@@ -92,8 +89,9 @@ export default {
 </script>
 
 <style scoped>
-.content {
+.navbar-container {
   background-color: #c4c4c4;
+  height: 50px;
 }
 
 .navbar {
@@ -104,26 +102,23 @@ div.selected a {
   color: white;
 }
 
-.title {
-  margin: 5px 0 20px 8%;
-  text-align: center;
+.background {
+  background-color: #00071f;
+  padding: 0px 35px 0px 35px;
 }
 
-#background {
-  background-color: white;
-  padding: 0px 25px 0px 25px;
-  color: #6B6666;
+.title {
+  margin: 0px 0 20px 8%;
+  text-align: center;
 }
 
 p.navbar-title {
   color: white;
-  text-align: center;
-  margin-bottom: 0;
+  padding: 0px 0 0 0;
 }
 
-p.navbar-subtitle {
-  position: absolute;
-  color: #01A4FF;
+.navbar-nav {
+  margin: -40px 0 0 0;
 }
 
 .nav-item a {
@@ -168,13 +163,9 @@ p.navbar-subtitle {
 
 @media (min-width: 954px) {
   p.navbar-title {
-    font-size: 25px;
-    margin-top: 10px;
+    margin: 0;
+    font-size: 45px;
     width: 100%;
-  }
-
-  p.navbar-subtitle {
-    margin-top: -8px;
   }
 
   #navbarSupportedContent {

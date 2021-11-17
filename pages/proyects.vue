@@ -49,7 +49,6 @@
 <script>
 import { 
   NAVBAR_TITLE,
-  NAVBAR_SUBTITLE,
   PANDEMIC_SIMULATOR_TITLE,
   PANDEMIC_SIMULATOR_CONTENT,
   PS_CARACTERISTICS_TITLE,
@@ -59,7 +58,6 @@ export default {
   data: () => {
     return {
       navBarTitle: NAVBAR_TITLE,
-      navBarSubtitle: NAVBAR_SUBTITLE,
       simulatorTitle: PANDEMIC_SIMULATOR_TITLE,
       simulatorContent: PANDEMIC_SIMULATOR_CONTENT,
       simulatorCaracteristicsTtitle: PS_CARACTERISTICS_TITLE,

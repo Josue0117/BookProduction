@@ -1,7 +1,7 @@
 <template>
   <div class="about-me-container">
     <div class="page-content">
-      <NavBar :title="navBarTitle" :subtitle="navBarSubtitle" />
+      <NavBar :title="navBarTitle" />
       <div class="row">
         <div class="col-4 hero-image">
           <img
@@ -38,7 +38,6 @@
 <script>
 import {
   NAVBAR_TITLE,
-  NAVBAR_SUBTITLE,
   ABOUT_ME_TITLE,
   ABOUT_ME_CONTENT,
   DOWNLOAD_BUTTON_TEXT,
@@ -47,7 +46,6 @@ export default {
   data: () => {
     return {
       navBarTitle: NAVBAR_TITLE,
-      navBarSubtitle: NAVBAR_SUBTITLE,
       aboutMeTitle: ABOUT_ME_TITLE,
       aboutMeContent: ABOUT_ME_CONTENT,
       buttonText: DOWNLOAD_BUTTON_TEXT,

@@ -1,7 +1,7 @@
 <template>
   <div class="skills-container">
     <div class="page-content">
-      <NavBar :title="title" />
+      <NavBar :title="navBarTitle" />
       <div class="row skills-page">
         <div class="col-1"></div>
         <div class="col-5">
@@ -68,7 +68,6 @@ export default {
   data: () => {
     return {
       navBarTitle: NAVBAR_TITLE,
-      navBarSubitle: NAVBAR_SUBTITLE,
       skillsExplicationTitle: SKILLS_EXPLICATION_TITLE,
       skillsExplicationContent: SKILLS_EXPLICATION_CONTENT,
       highSpan: SKILLS_HIGH_SPAN,
