@@ -44,7 +44,7 @@
             <div v-bind:class="{selected: (title === proyectsOptionText)}">
               <NuxtLink 
                 class="nav-link" 
-                to="proyects"
+                to="/proyects"
               >{{ proyectsOptionText }}</NuxtLink>
             </div>
           </li>

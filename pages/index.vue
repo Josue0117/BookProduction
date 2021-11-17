@@ -2,7 +2,7 @@
   <div>
     <div class="container-cards-roulete">
       <div class="cards-roulete">
-        <NuxtLink to="about-me">
+        <NuxtLink to="/about-me">
           <InfoCard
             class="info-card card-1"
             :header-image-url="require('@/assets/images/hero-image.png')"
@@ -11,14 +11,14 @@
             :cardNumber="1"
           />
         </NuxtLink>
-        <a href="skills">
+        <NuxtLink to="/skills">
           <InfoCard
             class="info-card card-2"
             :title="titleCard2"
             :cardNumber="2"
           />
-        </a>
-        <NuxtLink to="proyects">
+        </NuxtLink>
+        <NuxtLink to="/proyects">
           <InfoCard
             class="info-card card-3"
             :title="titleCard3"
