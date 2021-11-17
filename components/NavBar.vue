@@ -28,7 +28,7 @@
             <div v-bind:class="{selected: (title === skillOptionText)}">
               <NuxtLink 
                 class="nav-link" 
-                to="skills"
+                to="/skills"
               >{{ skillOptionText }}</NuxtLink>
             </div>
           </li>
@@ -36,7 +36,7 @@
             <div v-bind:class="{selected: (title === aboutOptionText)}">
               <NuxtLink 
                 class="nav-link" 
-                to="about-me"
+                to="/about-me"
               >Acerca de mi</NuxtLink>
             </div>
           </li>
