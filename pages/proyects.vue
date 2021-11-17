@@ -13,7 +13,7 @@
           </div>
           <div class="row blue-buttons">
             <div class="col-6 button-1">
-              <a href="#">Simulador</a>
+              <a href="https://josue0117.github.io/PandemicSimulator/">Simulador</a>
             </div>
             <div class="col-6 button-2">
               <a href="https://github.com/Josue0117/pandemic-simulator">GitHub</a>
