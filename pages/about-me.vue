@@ -37,8 +37,8 @@
 
 <script>
 import {
-  TITLE_CARD_1,
-  CARD_1_SUBTITLE,
+  NAVBAR_TITLE,
+  NAVBAR_SUBTITLE,
   ABOUT_ME_TITLE,
   ABOUT_ME_CONTENT,
   DOWNLOAD_BUTTON_TEXT,
@@ -46,8 +46,8 @@ import {
 export default {
   data: () => {
     return {
-      navBarTitle: TITLE_CARD_1,
-      navBarSubtitle: CARD_1_SUBTITLE,
+      navBarTitle: NAVBAR_TITLE,
+      navBarSubtitle: NAVBAR_SUBTITLE,
       aboutMeTitle: ABOUT_ME_TITLE,
       aboutMeContent: ABOUT_ME_CONTENT,
       buttonText: DOWNLOAD_BUTTON_TEXT,

@@ -49,7 +49,8 @@
 
 <script>
 import {
-  TITLE_CARD_2,
+  NAVBAR_TITLE,
+  NAVBAR_SUBTITLE,
   SKILLS_EXPLICATION_TITLE,
   SKILLS_EXPLICATION_CONTENT,
   SKILLS_HIGH_SPAN,
@@ -66,7 +67,8 @@ import {
 export default {
   data: () => {
     return {
-      title: TITLE_CARD_2,
+      navBarTitle: NAVBAR_TITLE,
+      navBarSubitle: NAVBAR_SUBTITLE,
       skillsExplicationTitle: SKILLS_EXPLICATION_TITLE,
       skillsExplicationContent: SKILLS_EXPLICATION_CONTENT,
       highSpan: SKILLS_HIGH_SPAN,

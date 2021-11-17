@@ -1,3 +1,7 @@
+// NAVBAR
+export const NAVBAR_TITLE = 'Josué Hernández'
+export const NAVBAR_SUBTITLE = 'Book'
+
 // ABOUT ME
 export const TITLE_CARD_1 = 'Josué Hernández'
 export const CARD_1_SUBTITLE = 'Web Developer'
