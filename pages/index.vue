@@ -11,13 +11,13 @@
             :cardNumber="1"
           />
         </NuxtLink>
-        <NuxtLink to="skills">
+        <a href="skills">
           <InfoCard
             class="info-card card-2"
             :title="titleCard2"
             :cardNumber="2"
           />
-        </NuxtLink>
+        </a>
         <NuxtLink to="proyects">
           <InfoCard
             class="info-card card-3"
