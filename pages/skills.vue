@@ -135,6 +135,7 @@ p.domain-value ul li span {
   background-color: white;
   border: solid 1px #01a4ff;
   border-radius: 5px;
+  transition: 1s;
 }
 
 .common-skill {
@@ -142,6 +143,7 @@ p.domain-value ul li span {
   background-color: white;
   border: solid 1px #6b6666;
   border-radius: 5px;
+  transition: 1s;
 }
 
 .dynamic .common-skill,
@@ -155,7 +157,12 @@ p.domain-value ul li span {
 }
 
 div.paragraph-images:hover img {
-  scale: 120%;
+  transform: scale(120%);
+  transition: 0.5s;
+}
+
+.skill-without-logo:hover p {
+  transform: scale(120%);
   transition: 0.5s;
 }
 
@@ -184,7 +191,7 @@ div.paragraph-images:hover .low {
 .static-page .skill-without-logo {
   display: block;
   height: 45%;
-  margin-top: 40%;
+  margin-top: 30%;
   font-size: 30px;
   color: #24b9c4;
   font-weight: bolder;
@@ -192,10 +199,5 @@ div.paragraph-images:hover .low {
 
 .dynamic .skill-without-logo {
   font-size: 25px;
-}
-
-.skill-without-logo:hover p {
-  scale: 120%;
-  transition: 0.5s;
 }
 </style>

@@ -11,7 +11,7 @@
         </div>
         <div class="col-8">
           <div class="row">
-            <div class="col-12">
+            <div class="col-6">
               <Paragraph
                 :title="aboutMeTitle"
                 :content-multi-paragraph="aboutMeContent"

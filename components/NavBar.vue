@@ -91,7 +91,7 @@ export default {
 <style scoped>
 .navbar-container {
   background-color: #c4c4c4;
-  height: 50px;
+  height: 55px;
 }
 
 .navbar {
@@ -118,7 +118,7 @@ p.navbar-title {
 }
 
 .navbar-nav {
-  margin: -40px 0 0 0;
+  margin: -35px 0 0 0;
 }
 
 .nav-item a {

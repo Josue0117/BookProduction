@@ -95,7 +95,7 @@ export default {
 
 .content {
   text-align: justify;
-  padding: 5%;
+  padding: 10% 15% 10% 15%;
   padding-bottom: 0;
 }
 
