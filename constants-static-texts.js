@@ -217,7 +217,7 @@ export const CONTACT_BLOCK_VALUES = {
   },
   thelephones: {
     title: 'Telefonos',
-    values: ['josuehr000@gmail.com', 'josue.h.r@outlook.com']
+    values: ['Cel. (56) 2146 7636', 'Loc. (55) 8654 5299']
   }
 }
 
