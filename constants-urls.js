@@ -1,12 +1,9 @@
-export const PROGRAMMING_LANGUAGUES_URLS = [
-  'php',
-  'vue',
-  'javascript',
-  'php',
-  'vue',
-  'javascript',
-  'php',
-  'vue',
-  'javascript',
-  'php'
-]
+export const SIMULATOR_LINKS = {
+  app: 'https://josue0117.github.io/PandemicSimulator/',
+  gitHub: 'https://github.com/Josue0117/pandemic-simulator'
+}
+
+export const BOOK_LINKS = {
+  app: '/',
+  gitHub: 'https://github.com/Josue0117/book/tree/master'
+}

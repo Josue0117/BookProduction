@@ -15,10 +15,10 @@
           </div>
           <div class="row blue-buttons">
             <div class="col-6 button-1">
-              <a href="https://josue0117.github.io/PandemicSimulator/">Aplicación</a>
+              <a v-bind:href="simulatorLinks.app">Aplicación</a>
             </div>
             <div class="col-6 button-2">
-              <a href="https://github.com/Josue0117/pandemic-simulator">GitHub</a>
+              <a v-bind:href="simulatorLinks.gitHub">GitHub</a>
             </div>
           </div>
         </div>
@@ -47,10 +47,10 @@
           </div>
           <div class="row blue-buttons">
             <div class="col-6 button-1">
-              <a href="/">Aplicación</a>
+              <a v-bind:href="bookLinks.app">Aplicación</a>
             </div>
             <div class="col-6 button-2">
-              <a href="https://github.com/Josue0117/book/tree/master">GitHub</a>
+              <a v-bind:href="bookLinks.gitHub">GitHub</a>
             </div>
           </div>
         </div>
@@ -73,12 +73,13 @@
 </template>
 
 <script>
+import { SIMULATOR_LINKS, BOOK_LINKS } from '@/constants-urls.js'
 import { 
   NAVBAR_TITLE,
   PANDEMIC_SIMULATOR_TITLE,
   PANDEMIC_SIMULATOR_CONTENT,
   BOOK_TITLE,
-  BOOK_CONTENT,
+  BOOK_CONTENT
 } from '@/constants-static-texts.js'
 export default {
   data: () => {
@@ -87,7 +88,9 @@ export default {
       simulatorTitle: PANDEMIC_SIMULATOR_TITLE,
       simulatorContent: PANDEMIC_SIMULATOR_CONTENT,
       bookTitle: BOOK_TITLE,
-      bookContent: BOOK_CONTENT
+      bookContent: BOOK_CONTENT,
+      simulatorLinks: SIMULATOR_LINKS,
+      bookLinks: BOOK_LINKS
     }
   }
 }
