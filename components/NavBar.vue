@@ -42,11 +42,11 @@
           </li>
           <li class="nav-item">
             <!--- TO DO: Make this navBar option be color:white if is the current page --->
-            <div v-bind:class="{selected: (this.$route.path === '/' + proyectsOptionText)}">
+            <div v-bind:class="{selected: (this.$route.path === '/' + projectsOptionText)}">
               <NuxtLink 
                 class="nav-link" 
-                to="/proyects"
-              >{{ proyectsOptionText }}</NuxtLink>
+                to="/projects"
+              >{{ projectsOptionText }}</NuxtLink>
             </div>
           </li>
         </ul>
@@ -72,7 +72,7 @@ export default {
     return {
       skillOptionText: TITLE_CARD_2,
       aboutOptionText: ABOUT_ME_TITLE,
-      proyectsOptionText: TITLE_CARD_3
+      projectsOptionText: TITLE_CARD_3
     }
   },
   methods: {

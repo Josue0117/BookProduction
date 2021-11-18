@@ -5,20 +5,18 @@ export const NAVBAR_TITLE = 'Book'
 export const TITLE_CARD_1 = 'Josué Hernández'
 export const CARD_1_SUBTITLE = 'Web Developer'
 export const ABOUT_ME_TITLE = 'Acerca de mi'
-export const ABOUT_ME_CONTENT = [
-  {normal: 'Cuando tenía 19 años me vi obligado a dejar la carrera de arquitectura junto con mis sueños y aspiraciones para trabajar y generar suficiente dinero para mantenerme. Entonces me di cuenta de que el trabajo representa una parte sumamente significativa de la vida adulta, razón por la cual no dejaba de preguntarme: ¿qué es lo que realmente quiero hacer? ¿Qué misión me satisface lo suficiente como para dedicarle una parte tan significativa de mi vida?'},
-  {normal: 'Tras 4 años de reflexión llegué a la conclusión de que no hay misión más noble que hacer de este mundo un lugar mejor. También me di cuenta de que nada me satisface más que trabajar por un propósito que es más grande que uno mismo.'},
+export const ABOUT_ME_CONTENT = 'Apasionado por el desarrollo de software con gran gusto por aprender nuevas tecnologías y enfrentarme a retos que me hagan mejorar mis habilidades. Durante la carrera presenté  especial interés por el desarrollo web y la inteligencia artificial.'
+
+export const MY_HISTORY_TITLE = 'Mi historia'
+export const MY_HISTORY_CONTENT = [
+  {normal: 'Cuando tenía 19 años me vi obligado a dejar la carrera de arquitectura junto con mis sueños y aspiraciones para trabajar y generar suficiente dinero para mantenerme. Entonces me di cuenta que el trabajo representa una parte sumamente significativa de la vida adulta.'},
+  {normal: 'Tras 4 años de reflexión llegué a la conclusión de que no hay misión más noble que hacer de este mundo un lugar mejor. También descubrí que no hay nada más satisfactorio que trabajar por un propósito más grande que uno mismo.'},
   {strong: 'Hoy estoy seguro de que quiero poder infligir un cambio positivo significativo en la sociedad a través de la tecnología.'},
 ]
 
 export const IMPORTANT_TEXT = [
   'Hoy estoy seguro de que quiero poder infligir un cambio positivo significativo en la sociedad a través de la tecnología.',
 ]
-
-
-// Llegué a la conclusión de que no hay misión más noble que hacer de este mundo un lugar mejor. También me di cuenta de que nada me satisface más que trabajar por un propósito que es más grande que uno mismo.
-
-// Hoy estoy seguro de que quiero poder infligir un cambio positivo significativo en la sociedad. Por eso, me hace muy feliz pertenecer a una organización como Huitzi, que busca empoderar a las personas a través del conocimiento.'
 export const DOWNLOAD_BUTTON_TEXT = 'Descargar CV'
 
 // SKILLS
@@ -191,7 +189,7 @@ export const PROTOTYPING_SECTION = {
   ]
 }
 
-// PROYECTS
+// PROJECTS
 export const TITLE_CARD_3 = 'Proyectos'
 export const PANDEMIC_SIMULATOR_TITLE = 'Pandemic Simulator'
 export const PANDEMIC_SIMULATOR_CONTENT = 'Lorem no se que Lorem no se que Lorem no se que Lorem no se que Lorem no se que Lorem no se que no se que no se que no se que no se que. Lorem no se que Lorem no se que Lorem no se que Lorem no se que Lorem no se que Lorem no se que no se que no se que no se que no se que.'

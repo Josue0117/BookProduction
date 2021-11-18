@@ -1,5 +1,5 @@
 <template>
-  <div class="proyects-container">
+  <div class="projects-container">
     <div class="page-content">
       <NavBar :title="navBarTitle" />
       <div class="row">
@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style scoped>
-.proyects-container {
+.projects-container {
   position: absolute;
   height: 100%;
   width: 100%;

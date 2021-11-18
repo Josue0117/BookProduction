@@ -18,7 +18,7 @@
             :cardNumber="2"
           />
         </NuxtLink>
-        <NuxtLink to="/proyects">
+        <NuxtLink to="/projects">
           <InfoCard
             class="info-card card-3"
             :title="titleCard3"

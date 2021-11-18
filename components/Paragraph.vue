@@ -10,7 +10,7 @@
     <div
       v-else
       class="paragraph-content"
-      v-for="paragraph in contentMultiParagraph"
+      v-for="paragraph in multiParagraphContent"
       v-bind:key="paragraph"
     >
       <span v-if="paragraph.hasOwnProperty('normal')">{{ paragraph.normal }}</span>
@@ -65,7 +65,7 @@ export default {
       type: String,
       default: ''
     },
-    contentMultiParagraph: {
+    multiParagraphContent: {
       type: Array,
       default: []
     }

@@ -11,10 +11,19 @@
         </div>
         <div class="col-8">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12">
               <Paragraph
+                id="about-me-page"
                 :title="aboutMeTitle"
-                :content-multi-paragraph="aboutMeContent"
+                :content="aboutMeContent"
+                context="static-page"
+              />
+            </div>
+            <div class="col-12">
+              <Paragraph
+                id="about-me-page"
+                :title="myHistoryTitle"
+                :multi-paragraph-content="myHistoryContent"
                 context="static-page"
               />
             </div>
@@ -40,6 +49,8 @@ import {
   NAVBAR_TITLE,
   ABOUT_ME_TITLE,
   ABOUT_ME_CONTENT,
+  MY_HISTORY_TITLE,
+  MY_HISTORY_CONTENT,
   DOWNLOAD_BUTTON_TEXT,
 } from '@/constants-static-texts.js'
 export default {
@@ -48,6 +59,8 @@ export default {
       navBarTitle: NAVBAR_TITLE,
       aboutMeTitle: ABOUT_ME_TITLE,
       aboutMeContent: ABOUT_ME_CONTENT,
+      myHistoryTitle: MY_HISTORY_TITLE,
+      myHistoryContent: MY_HISTORY_CONTENT,
       buttonText: DOWNLOAD_BUTTON_TEXT,
     }
   },
@@ -82,6 +95,10 @@ Footer,
   margin-top: 15%;
   margin-left: 25%;
   width: 70%;
+}
+
+#about-me-page {
+  padding-top: 5%;
 }
 
 button.red-button {
