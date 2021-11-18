@@ -57,15 +57,16 @@ export default {
   top: 150px;
   box-shadow: 0 0 15px #938e7e;
   background: white;
-
+  transition: 1s;
 }
 
 .container:hover {
-  box-shadow: 0 0 25px #a8e0ff;
+  box-shadow: 0 0 15px #01A4FF;
 }
 
 .header {
   background-color: #c4c4c4;
+  padding-top: 5px;
 }
 
 .hero-image {

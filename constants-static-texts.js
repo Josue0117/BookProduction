@@ -5,7 +5,7 @@ export const NAVBAR_TITLE = 'Book'
 export const TITLE_CARD_1 = 'Josué Hernández'
 export const CARD_1_SUBTITLE = 'Web Developer'
 export const ABOUT_ME_TITLE = 'Acerca de mi'
-export const ABOUT_ME_CONTENT = 'Apasionado por el desarrollo de software con gran gusto por aprender nuevas tecnologías y enfrentarme a retos que me hagan mejorar mis habilidades. Durante la carrera presenté  especial interés por el desarrollo web y la inteligencia artificial.'
+export const ABOUT_ME_CONTENT = 'Apasionado por el desarrollo de software con gran gusto por aprender nuevas tecnologías y enfrentar retos que me permitan mejorar mis habilidades. Durante la carrera presenté  especial interés por el desarrollo web y la inteligencia artificial.'
 
 export const MY_HISTORY_TITLE = 'Mi historia'
 export const MY_HISTORY_CONTENT = [
@@ -205,6 +205,7 @@ export const PROTOTYPING_SECTION = {
 export const TITLE_CARD_3 = 'Proyectos'
 export const PANDEMIC_SIMULATOR_TITLE = 'Pandemic Simulator'
 export const PANDEMIC_SIMULATOR_CONTENT = 'Prueba técnica para demostrar mis habilidades en Vue.js. La prueba consistió en programar una aplicación donde el usuario pueda crear una cuadrícula del ancho y alto especificado por el mismo (máximo 50 x 50 celdas). A continuación el usuario debe poder escoger aquellas celdas que representan un punto de contagio y aquellas que representan un punto de inmunidad. Finalmente el usuario debe poder iniciar la prueba. Los puntos de contagio deben contaminar a 4 celdas adyacentes (arriba, abajo, izquierda, derecha) una y otra vez hasta cubrir toda la cuadrícula exceptuando los puntos de inmunidad.'
+export const CARD_VERSION_PS_CONTENT = 'Prueba técnica para demostrar mis habilidades en Vue.js. La prueba consistió en programar una aplicación donde el usuario pueda crear una cuadrícula del ancho y alto especificado por el mismo (máximo 50 x 50 celdas). A continuación el usuario debe poder escoger aquellas celdas que representan un punto de contagio y aquellas que representan un punto de inmunidad.'
 export const BOOK_TITLE = 'Book'
 export const BOOK_CONTENT = 'Book personal para demostrar proyectos y habilidades de programación. Desarrollado en Nuxt.js como framework de desarrollo, Jest com framework para pruebas unitarias y Cypress para pruebas de integración. Se utilizó Bootstrap para implementar responsividad y estoy trabajando en integrar Less o Sass para eficientizar/ordenar los estilos.'
 

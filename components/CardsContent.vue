@@ -4,8 +4,8 @@
     <div class="card-1" v-if="cardNumber == 1">
       <div class="row">
         <Paragraph
-          :title="aboutMeTitle"
-          :content-multi-paragraph="aboutMeContent"
+          :title="myHistoryTitle"
+          :multi-paragraph-content="myHistoryContent"
           context="dynamic"
         />
       </div>
@@ -49,12 +49,12 @@
 <script>
 import { PROGRAMMING_LANGUAGUES_URLS } from '@/constants-urls.js'
 import {
-  ABOUT_ME_TITLE,
-  ABOUT_ME_CONTENT,
+  MY_HISTORY_TITLE,
+  MY_HISTORY_CONTENT,
   DOWNLOAD_BUTTON_TEXT,
   LANGUAGES_SECTION,
   PANDEMIC_SIMULATOR_TITLE,
-  PANDEMIC_SIMULATOR_CONTENT,
+  CARD_VERSION_PS_CONTENT,
 } from '@/constants-static-texts.js'
 export default {
   props: {
@@ -65,13 +65,13 @@ export default {
   },
   data: () => {
     return {
-      aboutMeTitle: ABOUT_ME_TITLE,
-      aboutMeContent: ABOUT_ME_CONTENT,
+      myHistoryTitle: MY_HISTORY_TITLE,
+      myHistoryContent: MY_HISTORY_CONTENT,
       buttonText: DOWNLOAD_BUTTON_TEXT,
       languagesSection: LANGUAGES_SECTION,
       programmingLanguagesUrls: PROGRAMMING_LANGUAGUES_URLS,
       proyectTittle: PANDEMIC_SIMULATOR_TITLE,
-      proyectDescription: PANDEMIC_SIMULATOR_CONTENT,
+      proyectDescription: CARD_VERSION_PS_CONTENT,
     }
   },
 }
@@ -79,7 +79,7 @@ export default {
 
 <style scoped>
 .red-button {
-  margin: -0.5% 5% 5% 5%;
+  margin: 10%;
   padding-bottom: 6px;
   width: 100%;
   font-size: 14px;
