@@ -192,7 +192,7 @@ div.paragraph-images:hover .low {
   display: block;
   height: 45%;
   margin-top: 30%;
-  font-size: 30px;
+  font-size: 25px;
   color: #24b9c4;
   font-weight: bolder;
 }

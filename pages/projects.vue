@@ -3,8 +3,8 @@
     <div class="page-content">
       <NavBar :title="navBarTitle" />
       <div class="row">
-        <div class="col-1"></div>
-        <div class="col-3 hero-image">
+        <div class="col-2"></div>
+        <div class="col-2 hero-image">
           <div class="row">
             <img
               :src="require('@/assets/images/coronavirus-azul.png')"
@@ -13,7 +13,7 @@
           </div>
           <div class="row blue-buttons">
             <div class="col-6 button-1">
-              <a href="https://josue0117.github.io/PandemicSimulator/">Simulador</a>
+              <a href="https://josue0117.github.io/PandemicSimulator/">Aplicación</a>
             </div>
             <div class="col-6 button-2">
               <a href="https://github.com/Josue0117/pandemic-simulator">GitHub</a>
@@ -22,17 +22,10 @@
         </div>
         <div class="col-8 about-vision">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12">
               <Paragraph
                 :title="simulatorTitle"
                 :content="simulatorContent"
-                context="static-page"
-              />
-            </div>
-            <div class="col-6">
-              <Paragraph
-                :title="simulatorCaracteristicsTtitle"
-                :content="simulatorCaracteristicsContent"
                 context="static-page"
               />
             </div>
@@ -89,7 +82,7 @@ div.static-page {
 }
 
 .hero-image img {
-  margin-top: 15%;
+  margin-top: 20%;
   width: 100%;
 }
 
