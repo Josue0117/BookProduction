@@ -205,8 +205,8 @@ export const PROTOTYPING_SECTION = {
 export const TITLE_CARD_3 = 'Proyectos'
 export const PANDEMIC_SIMULATOR_TITLE = 'Pandemic Simulator'
 export const PANDEMIC_SIMULATOR_CONTENT = 'Prueba técnica para demostrar mis habilidades en Vue.js. La prueba consistió en programar una aplicación donde el usuario pueda crear una cuadrícula del ancho y alto especificado por el mismo (máximo 50 x 50 celdas). A continuación el usuario debe poder escoger aquellas celdas que representan un punto de contagio y aquellas que representan un punto de inmunidad. Finalmente el usuario debe poder iniciar la prueba. Los puntos de contagio deben contaminar a 4 celdas adyacentes (arriba, abajo, izquierda, derecha) una y otra vez hasta cubrir toda la cuadrícula exceptuando los puntos de inmunidad.'
-export const PS_CARACTERISTICS_TITLE = 'Características técnicas'
-export const PS_CARACTERISTICS_CONTENT = 'Lorem no se que Lorem no se que Lorem no se que Lorem no se que Lorem no se que Lorem no se que no se que no se que no se que no se que. Lorem no se que Lorem no se que Lorem no se que Lorem no se que Lorem no se que Lorem no se que no se que no se que no se que no se que.'
+export const BOOK_TITLE = 'Book'
+export const BOOK_CONTENT = 'Book personal para demostrar proyectos y habilidades de programación. Desarrollado en Nuxt.js como framework de desarrollo, Jest com framework para pruebas unitarias y Cypress para pruebas de integración. Se utilizó Bootstrap para implementar responsividad y estoy trabajando en integrar Less o Sass para eficientizar/ordenar los estilos.'
 
 // FOOTER
 export const CONTACT_BLOCK_VALUES = {

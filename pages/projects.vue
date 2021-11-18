@@ -2,6 +2,8 @@
   <div class="projects-container">
     <div class="page-content">
       <NavBar :title="navBarTitle" />
+
+      <!-- PANDEMIC SIMULATOR --->
       <div class="row">
         <div class="col-2"></div>
         <div class="col-2 hero-image">
@@ -20,7 +22,7 @@
             </div>
           </div>
         </div>
-        <div class="col-8 about-vision">
+        <div class="col-8">
           <div class="row">
             <div class="col-12">
               <Paragraph
@@ -31,7 +33,38 @@
             </div>
           </div>
         </div>
-        <div class="row"></div>
+      </div>
+
+      <!-- BOOK --->
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2 hero-image">
+          <div class="row">
+            <img
+              :src="require('@/assets/images/book.png')"
+              alt="hero-image"
+            />
+          </div>
+          <div class="row blue-buttons">
+            <div class="col-6 button-1">
+              <a href="/">Aplicación</a>
+            </div>
+            <div class="col-6 button-2">
+              <a href="https://github.com/Josue0117/book/tree/master">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-12">
+              <Paragraph
+                :title="bookTitle"
+                :content="bookContent"
+                context="static-page"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="push"></div>
     </div>
@@ -44,8 +77,8 @@ import {
   NAVBAR_TITLE,
   PANDEMIC_SIMULATOR_TITLE,
   PANDEMIC_SIMULATOR_CONTENT,
-  PS_CARACTERISTICS_TITLE,
-  PS_CARACTERISTICS_CONTENT,
+  BOOK_TITLE,
+  BOOK_CONTENT,
 } from '@/constants-static-texts.js'
 export default {
   data: () => {
@@ -53,8 +86,8 @@ export default {
       navBarTitle: NAVBAR_TITLE,
       simulatorTitle: PANDEMIC_SIMULATOR_TITLE,
       simulatorContent: PANDEMIC_SIMULATOR_CONTENT,
-      simulatorCaracteristicsTtitle: PS_CARACTERISTICS_TITLE,
-      simulatorCaracteristicsContent: PS_CARACTERISTICS_CONTENT
+      bookTitle: BOOK_TITLE,
+      bookContent: BOOK_CONTENT
     }
   }
 }
@@ -109,6 +142,6 @@ div.static-page {
 
 Footer,
 .push {
-  height: 200px;
+  height: 250px;
 }
 </style>

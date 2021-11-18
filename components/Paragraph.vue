@@ -95,8 +95,14 @@ export default {
 
 .content {
   text-align: justify;
-  padding: 10% 15% 10% 15%;
   padding-bottom: 0;
+}
+
+.static-page {
+  padding: 10% 15% 0% 15%;
+}
+.dynamic {
+  padding: 5%;
 }
 
 .paragraph-title {
