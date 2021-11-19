@@ -5,8 +5,8 @@
 
       <!-- PANDEMIC SIMULATOR --->
       <div class="row">
-        <div class="col-2"></div>
-        <div class="col-2 hero-image">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2 hero-image">
           <div class="row">
             <img
               :src="require('@/assets/images/coronavirus-azul.png')"
@@ -22,9 +22,9 @@
             </div>
           </div>
         </div>
-        <div class="col-8">
+        <div class="col-md-12 col-lg-8">
           <div class="row">
-            <div class="col-12">
+            <div class="col-md-12 col-lg-11">
               <Paragraph
                 :title="simulatorTitle"
                 :content="simulatorContent"
@@ -37,8 +37,8 @@
 
       <!-- BOOK --->
       <div class="row">
-        <div class="col-2"></div>
-        <div class="col-2 hero-image">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2 hero-image">
           <div class="row">
             <img
               :src="require('@/assets/images/book.png')"
@@ -54,9 +54,9 @@
             </div>
           </div>
         </div>
-        <div class="col-8">
+        <div class="col-md-12 col-lg-8">
           <div class="row">
-            <div class="col-12">
+            <div class="col-md-12 col-lg-11">
               <Paragraph
                 :title="bookTitle"
                 :content="bookContent"
@@ -105,16 +105,17 @@ export default {
 }
 
 div.static-page {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .row {
   width: 100%;
+  margin: 0;
 }
 
 .hero-image img {
-  margin-top: 20%;
-  width: 100%;
+  margin: 15% 0 0 15%;
+  width: 70%;
 }
 
 .blue-buttons {
@@ -140,7 +141,7 @@ div.static-page {
 
 .page-content {
   min-height: 100%;
-  margin-bottom: -340px;
+  margin-bottom: -300px;
 }
 
 Footer,
@@ -150,12 +151,21 @@ Footer,
 
 @media (min-width: 721px) {
   .page-content {
-    margin-bottom: -200px;
+    margin-bottom: -170px;
   }
 
   Footer,
   .push {
     height: 220px;
+  }
+
+  div.static-page {
+    padding-top: 100px;
+  }
+
+  .hero-image img {
+    margin: 20% 0 0 0;
+    width: 100%;
   }
 }
 </style>

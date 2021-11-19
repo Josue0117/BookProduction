@@ -204,7 +204,7 @@ Footer,
 
 
 @media (min-width: 721px) {
-  .hero-image img {
+  .skills-container .hero-image img {
     margin-left: 25%;
   }
 
