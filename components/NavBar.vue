@@ -5,9 +5,9 @@
         <p class="navbar-title">{{ title }}</p>
       </div>
       <button class="navbar-toggler" @click="showMenu">
-          <div class="toggler-icon"></div>
-          <div class="toggler-icon"></div>
-          <div class="toggler-icon"></div>
+        <div class="toggler-icon"></div>
+        <div class="toggler-icon"></div>
+        <div class="toggler-icon"></div>
       </button>
 
       <div
@@ -116,6 +116,7 @@ button.navbar-toggler {
 
 #navbarSupportedContent {
   position: relative;
+  margin: -15px 0 0 0;
   padding: 30px 0 0 8%;
   background-color: #c4c4c4;
   z-index: 100;
@@ -133,12 +134,15 @@ div.selected a {
 .title {
   margin: 0 0 0 8%;
   text-align: center;
+  z-index: 101;
 }
 
 p.navbar-title {
   font-size: 45px;
   color: white;
   padding: 0 0 0 0;
+  margin: 0;
+  width: 100%;
 }
 
 .navbar-nav {
@@ -155,9 +159,12 @@ p.navbar-title {
   color:white;
 }
 
+.container-link-to-index {
+  margin: 20px 0 0 10px;
+}
+
 .link-to-index {
   border: solid 2px;
-  display: none;
   margin-top: 0;
 }
 
@@ -189,26 +196,13 @@ p.navbar-title {
 
 @media (min-width: 992px) {
   #navbarSupportedContent {
-    padding: 10px 0 0 8%;
+    padding: 25px 0 0 8%;
     position: absolute;
     right: 8%;
-  }
-}
-
-
-
-@media (min-width: 540px) {
-  p.navbar-title {
-    margin: 0;
-    width: 100%;
   }
 
   .container-link-to-index {
     margin: 5px 0 0 10px;
-  }
-
-  .link-to-index {
-    display: block;
   }
 }
 </style>

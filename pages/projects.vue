@@ -149,7 +149,7 @@ Footer,
   height: 340px;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 768px) {
   .page-content {
     margin-bottom: -170px;
   }

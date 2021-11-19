@@ -44,7 +44,7 @@ export default {
 }
 
 
-@media (min-width: 721px) {
+@media (min-width: 768px) {
   .media-link-container img {
     margin: 20px 10px 0 0;
     margin-top: 0;

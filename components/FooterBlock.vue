@@ -42,7 +42,7 @@ p.footer-block-value {
 }
 
 
-@media (min-width: 721px) {
+@media (min-width: 768px) {
   .content {
     padding: 0 0 5px 0;
   } 

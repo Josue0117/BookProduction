@@ -124,7 +124,7 @@ Footer,
   height: 340px;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 768px) {
   .row {
     margin-left: -15px;
   }

@@ -99,7 +99,7 @@ export default {
 }
 
 .static-page {
-  padding: 5% 5% 0 5%;
+  padding: 10% 0 0 0;
 }
 
 .dynamic {
@@ -135,7 +135,7 @@ img {
   padding: 25%;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 768px) {
   .static-page {
     padding: 10% 5% 0% 5%;
   }

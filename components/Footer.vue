@@ -102,7 +102,7 @@ p.footer-subtitle {
 }
 
 
-@media (min-width: 721px) {
+@media (min-width: 768px) {
   .contact {
     padding: 20px 20px 20px 9%;
   }  
