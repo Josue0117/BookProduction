@@ -52,8 +52,8 @@ export default {
 <style scoped>
 .container {
   position: absolute;
-  width: 300px;
-  height: 450px;
+  width: 50%;
+  min-height: 400px;
   top: 150px;
   box-shadow: 0 0 15px #938e7e;
   background: white;
@@ -71,6 +71,7 @@ export default {
 
 .hero-image {
   padding: 0;
+  display: none;
 }
 
 .hero-image img {
@@ -100,5 +101,16 @@ p.subtitle {
   text-align: center;
   width: 100%;
   margin-top: -8px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 300px;
+    height: 450px;
+  }
+
+  .hero-image {
+    display: block;
+  }
 }
 </style>

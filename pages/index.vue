@@ -63,8 +63,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  max-width: 1060px;
-  width: 600px;
+  max-width: 600px;
   height: 100%;
 }
 
