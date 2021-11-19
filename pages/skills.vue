@@ -3,8 +3,8 @@
     <div class="page-content">
       <NavBar :title="navBarTitle" />
       <div class="row skills-page">
-        <div class="col-1"></div>
-        <div class="col-5">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
           <Paragraph 
             :title="skillsExplicationTitle" 
             :content="skillsExplicationContent" 
@@ -17,6 +17,18 @@
               <li><span class="low">{{ lowSpan }}</span>{{ lowContent }}</li>
             </ul>
           </p>
+          <Paragraph 
+            :title="languagesSection.title" 
+            :skills-list="languagesSection.values" 
+            context="static-page"
+          />
+        </div>
+        <div class="col-lg-5">
+          <Paragraph
+            :title="frameworksSection.title"
+            :skills-list="frameworksSection.values"
+            context="static-page"
+          />
           <Paragraph
             :title="databasesSection.title"
             :skills-list="databasesSection.values"
@@ -25,18 +37,6 @@
           <Paragraph
             :title="githubSection.title"
             :skills-list="githubSection.values"
-            context="static-page"
-          />
-        </div>
-        <div class="col-5">
-          <Paragraph 
-            :title="languagesSection.title" 
-            :skills-list="languagesSection.values" 
-            context="static-page"
-          />
-          <Paragraph
-            :title="frameworksSection.title"
-            :skills-list="frameworksSection.values"
             context="static-page"
           />
         </div>
@@ -94,10 +94,11 @@ export default {
 
 .row.skills-page {
   width: 100%;
+  margin: 0;
 }
 
 p.domain-value {
-  padding: 20px 0 0 10%;
+  padding: 10px 0 0 0;
   color: #aa9f9f;
 }
 
@@ -193,7 +194,7 @@ div.paragraph-images:hover .low {
 
 .page-content {
   min-height: 100%;
-  margin-bottom: -340px;
+  margin-bottom: -300px;
 }
 
 Footer,
@@ -203,10 +204,6 @@ Footer,
 
 
 @media (min-width: 721px) {
-  .row {
-    margin-left: -15px;
-  }
-
   .hero-image img {
     margin-left: 25%;
   }

@@ -18,7 +18,7 @@
     </div>
     <div class="row">
       <div
-        class="paragraph-images col-4"
+        class="col-6 col-sm-3 col-lg-4 paragraph-images"
         v-for="skill in skillsList"
         v-bind:key="skill"
       >
@@ -99,7 +99,7 @@ export default {
 }
 
 .static-page {
-  padding: 15% 0 0 0;
+  padding: 5% 5% 0 5%;
 }
 
 .dynamic {
@@ -137,7 +137,7 @@ img {
 
 @media (min-width: 721px) {
   .static-page {
-    padding: 10% 15% 0% 15%;
+    padding: 10% 5% 0% 5%;
   }
 }
 </style>
