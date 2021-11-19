@@ -5,7 +5,9 @@
         <p class="navbar-title">{{ title }}</p>
       </div>
       <button class="navbar-toggler" @click="showMenu">
-        <span class="navbar-toggler-icon"></span>
+          <div class="toggler-icon"></div>
+          <div class="toggler-icon"></div>
+          <div class="toggler-icon"></div>
       </button>
 
       <div
@@ -94,15 +96,29 @@ export default {
   height: 55px;
 }
 
+.navbar {
+  padding: 0;
+}
+
+button.navbar-toggler {
+  border: 2px solid #6B6666;
+  border-radius: 8px;
+  margin: -10px 10px 0 0; 
+}
+
+.toggler-icon {
+  background-color: #6B6666;
+  width: 25px;
+  height: 3px;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+}
+
 #navbarSupportedContent {
   position: relative;
   padding: 30px 0 0 8%;
   background-color: #c4c4c4;
   z-index: 100;
-}
-
-.navbar {
-  padding: 0;
 }
 
 div.selected a {
