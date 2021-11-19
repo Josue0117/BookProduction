@@ -94,6 +94,13 @@ export default {
   height: 55px;
 }
 
+#navbarSupportedContent {
+  position: relative;
+  padding: 30px 0 0 8%;
+  background-color: #c4c4c4;
+  z-index: 100;
+}
+
 .navbar {
   padding: 0;
 }
@@ -108,17 +115,18 @@ div.selected a {
 }
 
 .title {
-  margin: 0px 0 20px 8%;
+  margin: 0 0 0 8%;
   text-align: center;
 }
 
 p.navbar-title {
+  font-size: 45px;
   color: white;
-  padding: 0px 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .navbar-nav {
-  margin: -35px 0 0 0;
+  margin: -25px 0 0 0;
 }
 
 .nav-item a {
@@ -134,6 +142,7 @@ p.navbar-title {
 .link-to-index {
   border: solid 2px;
   display: none;
+  margin-top: 0;
 }
 
 .left {
@@ -161,25 +170,29 @@ p.navbar-title {
 }
 
 
-@media (min-width: 720px) {
-  p.navbar-title {
-    margin: 0;
-    font-size: 45px;
-    width: 100%;
-  }
 
+@media (min-width: 992px) {
   #navbarSupportedContent {
+    padding: 10px 0 0 8%;
     position: absolute;
     right: 8%;
   }
+}
+
+
+
+@media (min-width: 540px) {
+  p.navbar-title {
+    margin: 0;
+    width: 100%;
+  }
 
   .container-link-to-index {
-    margin-top: 5px;
+    margin: 5px 0 0 10px;
   }
 
   .link-to-index {
     display: block;
   }
 }
-
 </style>
