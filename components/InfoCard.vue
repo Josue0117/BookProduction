@@ -54,7 +54,7 @@ export default {
   position: absolute;
   width: 50%;
   min-height: 400px;
-  top: 150px;
+  top: 50px;
   box-shadow: 0 0 15px #938e7e;
   background: white;
   transition: 0.5s;
@@ -107,7 +107,8 @@ p.subtitle {
   .container {
     width: 300px;
     height: 450px;
-  }
+    top: 150px;
+}
 
   .hero-image {
     display: block;
