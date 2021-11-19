@@ -191,6 +191,16 @@ div.paragraph-images:hover .low {
   font-size: 25px;
 }
 
+.page-content {
+  min-height: 100%;
+  margin-bottom: -340px;
+}
+
+Footer,
+.push {
+  height: 340px;
+}
+
 
 @media (min-width: 721px) {
   .row {
@@ -213,15 +223,5 @@ div.paragraph-images:hover .low {
   .push {
     height: 220px;
   }
-}
-
-.page-content {
-  min-height: 100%;
-  margin-bottom: -340px;
-}
-
-Footer,
-.push {
-  height: 340px;
 }
 </style>

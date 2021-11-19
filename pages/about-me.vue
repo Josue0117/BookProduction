@@ -110,9 +110,18 @@ button.red-button:hover {
   background-color: #b90101;
 }
 
-
 .row {
   margin-left: 0;
+}
+
+.page-content {
+  min-height: 100%;
+  margin-bottom: -340px;
+}
+
+Footer,
+.push {
+  height: 340px;
 }
 
 @media (min-width: 721px) {
@@ -136,15 +145,5 @@ button.red-button:hover {
   .push {
     height: 220px;
   }
-}
-
-.page-content {
-  min-height: 100%;
-  margin-bottom: -340px;
-}
-
-Footer,
-.push {
-  height: 340px;
 }
 </style>

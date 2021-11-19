@@ -138,6 +138,16 @@ div.static-page {
   text-align: right;
 }
 
+.page-content {
+  min-height: 100%;
+  margin-bottom: -340px;
+}
+
+Footer,
+.push {
+  height: 340px;
+}
+
 @media (min-width: 721px) {
   .page-content {
     margin-bottom: -200px;
@@ -147,15 +157,5 @@ div.static-page {
   .push {
     height: 220px;
   }
-}
-
-.page-content {
-  min-height: 100%;
-  margin-bottom: -340px;
-}
-
-Footer,
-.push {
-  height: 340px;
 }
 </style>
