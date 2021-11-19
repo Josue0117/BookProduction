@@ -26,6 +26,7 @@ export default {
 .content {
   position: inherit;
   display: block;
+  padding: 20px 0 5px 0;
 }
 
 p {
@@ -38,5 +39,12 @@ p.footer-block-tittle {
 
 p.footer-block-value {
   color: white;
+}
+
+
+@media (min-width: 721px) {
+  .content {
+    padding: 0 0 5px 0;
+  } 
 }
 </style>

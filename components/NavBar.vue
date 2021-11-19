@@ -161,7 +161,7 @@ p.navbar-title {
 }
 
 
-@media (min-width: 954px) {
+@media (min-width: 720px) {
   p.navbar-title {
     margin: 0;
     font-size: 45px;

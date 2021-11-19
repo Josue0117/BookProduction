@@ -9,22 +9,22 @@
     <div class="contact">
       <div class="row">
         <div
-          class="col-3"
+          class="col-md-12 col-lg-3"
           v-for="contact in contactBlocksValues"
           v-bind:key="contact.title"
         >
           <FooterBlock :title="contact.title" :values="contact.values" />
         </div>
-        <div class="col-3"></div>
-        <div class="col-3">
+        <div class=" col-lg-3"></div>
+        <div class=" col-lg-3">
           <div class="row media-links">
-            <div class="col-4"></div>
+            <div class="col-md-10 col-lg-4"></div>
             <div
-              class="col-2"
+            class="media-link-icon"
               v-for="mediaLink in mediaLinks"
               v-bind:key="mediaLink"
             >
-              <FooterLink
+              <FooterLink 
                 :image-src="mediaLink.imageSrc"
                 :link="mediaLink.link"
               />
@@ -90,10 +90,25 @@ p.footer-subtitle {
 .contact {
   position: relative;
   bottom: 0;
-  padding: 20px 20px 20px 9%;
+  padding: 0% 5% 0% 5%;
 }
 
 .media-links {
   text-align: right;
+}
+
+.media-link-icon {
+  margin-left: 2%;
+}
+
+
+@media (min-width: 721px) {
+  .contact {
+    padding: 20px 20px 20px 9%;
+  }  
+
+  .media-link-icon {
+    margin-top: 20px;
+  }
 }
 </style>

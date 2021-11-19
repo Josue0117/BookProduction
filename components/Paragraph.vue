@@ -99,8 +99,9 @@ export default {
 }
 
 .static-page {
-  padding: 10% 15% 0% 15%;
+  padding: 15% 0 0 0;
 }
+
 .dynamic {
   padding: 5%;
 }
@@ -132,5 +133,11 @@ export default {
 img {
   width: 100%;
   padding: 25%;
+}
+
+@media (min-width: 721px) {
+  .static-page {
+    padding: 10% 15% 0% 15%;
+  }
 }
 </style>

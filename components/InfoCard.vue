@@ -57,11 +57,11 @@ export default {
   top: 150px;
   box-shadow: 0 0 15px #938e7e;
   background: white;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .container:hover {
-  box-shadow: 0 0 15px #01A4FF;
+  box-shadow: 0 0 25px #73ceff;
 }
 
 .header {

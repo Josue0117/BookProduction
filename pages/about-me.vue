@@ -3,13 +3,13 @@
     <div class="page-content">
       <NavBar :title="navBarTitle" />
       <div class="row">
-        <div class="col-4 hero-image">
+        <div class="col-sm-12 col-lg-4 hero-image">
           <img
             :src="require('@/assets/images/hero-image.png')"
             alt="hero-image"
           />
         </div>
-        <div class="col-8">
+        <div class="col-sm-12 col-lg-8">
           <div class="row">
             <div class="col-12">
               <Paragraph
@@ -27,7 +27,7 @@
                 context="static-page"
               />
             </div>
-            <div class="col-12">
+            <div class="col-12 red-button-container">
               <a href="/CV.pdf" download="">
                 <button class="red-button">
                   {{ buttonText }}
@@ -81,7 +81,7 @@ export default {
 
 Footer,
 .push {
-  height: 220px;
+  height: 380px;
 }
 
 .row {
@@ -89,20 +89,23 @@ Footer,
   height: 100%;
 }
 
+.hero-image {
+  text-align: center;
+}
+
 .hero-image img {
   border-radius: 50%;
   box-shadow: 0 0 15px #938e7e;
   margin-top: 15%;
-  margin-left: 25%;
   width: 70%;
 }
 
-#about-me-page {
-  padding-top: 5%;
+.red-button-container {
+  text-align: center;
 }
 
 button.red-button {
-  margin: 5% 0% 5% 30%;
+  margin: 5% 0% 5% 0%;
   padding-top: 6px;
   padding-bottom: 6px;
   width: 40%;
@@ -115,5 +118,28 @@ button.red-button {
 
 button.red-button:hover {
   background-color: #b90101;
+}
+
+
+.row {
+  margin-left: 0;
+}
+
+@media (min-width: 721px) {
+  .row {
+    margin-left: -15px;
+  }
+
+  .hero-image img {
+    margin-left: 25%;
+  }
+
+  #about-me-page {
+    padding-top: 5%;
+  }
+  Footer,
+  .push {
+    height: 220px;
+  }
 }
 </style>

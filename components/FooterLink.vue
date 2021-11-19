@@ -39,7 +39,15 @@ export default {
 
 <style scoped>
 .media-link-container img {
-  margin: 20px 10px 0 0;
   width: 40px;
+  margin: 5px 5% 0 0;
+}
+
+
+@media (min-width: 721px) {
+  .media-link-container img {
+    margin: 20px 10px 0 0;
+    margin-top: 0;
+  }  
 }
 </style>
