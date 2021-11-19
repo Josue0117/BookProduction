@@ -92,16 +92,6 @@ export default {
   margin: 0;
 }
 
-.page-content {
-  min-height: 100%;
-  margin-bottom: -200px;
-}
-
-Footer,
-.push {
-  height: 250px;
-}
-
 .row.skills-page {
   width: 100%;
 }
@@ -199,5 +189,39 @@ div.paragraph-images:hover .low {
 
 .dynamic .skill-without-logo {
   font-size: 25px;
+}
+
+
+@media (min-width: 721px) {
+  .row {
+    margin-left: -15px;
+  }
+
+  .hero-image img {
+    margin-left: 25%;
+  }
+
+  #about-me-page {
+    padding-top: 5%;
+  }
+
+  .page-content {
+    margin-bottom: -200px;
+  }
+
+  Footer,
+  .push {
+    height: 220px;
+  }
+}
+
+.page-content {
+  min-height: 100%;
+  margin-bottom: -340px;
+}
+
+Footer,
+.push {
+  height: 340px;
 }
 </style>

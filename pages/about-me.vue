@@ -74,16 +74,6 @@ export default {
   margin: 0;
 }
 
-.page-content {
-  min-height: 100%;
-  margin-bottom: -200px;
-}
-
-Footer,
-.push {
-  height: 380px;
-}
-
 .row {
   width: 100%;
   height: 100%;
@@ -137,9 +127,24 @@ button.red-button:hover {
   #about-me-page {
     padding-top: 5%;
   }
+
+  .page-content {
+    margin-bottom: -200px;
+  }
+
   Footer,
   .push {
     height: 220px;
   }
+}
+
+.page-content {
+  min-height: 100%;
+  margin-bottom: -340px;
+}
+
+Footer,
+.push {
+  height: 340px;
 }
 </style>
