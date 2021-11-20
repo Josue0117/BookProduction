@@ -2,8 +2,8 @@
   <footer>
     <div class="title">
       <div>
-        <p class="footer-title">{{ navBarTitle }}</p>
-        <p class="footer-subtitle">{{ navBarSubtitle }}</p>
+        <p class="footer-title">{{ footerTitle }}</p>
+        <p class="footer-subtitle">{{ footerSubtitle }}</p>
       </div>
     </div>
     <div class="contact">
@@ -46,8 +46,8 @@ import {
 export default {
   data: () => {
     return {
-      navBarTitle: TITLE_CARD_1.toUpperCase(),
-      navBarSubtitle: CARD_1_SUBTITLE.toUpperCase(),
+      footerTitle: TITLE_CARD_1.toUpperCase(),
+      footerSubtitle: CARD_1_SUBTITLE.toUpperCase(),
       contactBlocksValues: CONTACT_BLOCK_VALUES,
       mediaLinks: MEDIA_LINKS,
     }

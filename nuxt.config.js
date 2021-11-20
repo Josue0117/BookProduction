@@ -60,5 +60,11 @@ export default {
 
   router: {
     base: '/BookProduction/'
+  },
+
+  pwa: { 
+    icon: { 
+      source: '~/static/icon.png' 
+    } 
   }
 }
