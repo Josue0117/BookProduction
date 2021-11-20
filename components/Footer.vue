@@ -20,7 +20,7 @@
           <div class="row media-links">
             <div class="col-md-10 col-lg-4"></div>
             <div
-            class="media-link-icon"
+              class="media-link-icon"
               v-for="mediaLink in mediaLinks"
               v-bind:key="mediaLink"
             >
@@ -37,11 +37,11 @@
 </template>
 
 <script>
+import { MEDIA_LINKS } from '@/constants-urls'
 import {
   TITLE_CARD_1,
   CARD_1_SUBTITLE,
   CONTACT_BLOCK_VALUES,
-  MEDIA_LINKS,
 } from '@/constants-static-texts.js'
 export default {
   data: () => {

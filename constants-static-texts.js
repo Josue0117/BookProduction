@@ -220,14 +220,3 @@ export const CONTACT_BLOCK_VALUES = {
     values: ['Cel. (56) 2146 7636', 'Loc. (55) 8654 5299']
   }
 }
-
-export const MEDIA_LINKS = {
-  gitHub: {
-    link: 'https://github.com/Josue0117',
-    imageSrc: 'github'
-  },
-  linkedin: {
-    link: 'https://www.linkedin.com/in/josu%C3%A9-hern%C3%A1ndez-3b4671185/',
-    imageSrc: 'linkedin'
-  }
-}
