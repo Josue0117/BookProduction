@@ -4,6 +4,6 @@ export const SIMULATOR_LINKS = {
 }
 
 export const BOOK_LINKS = {
-  app: '/',
+  app: 'https://josue0117.github.io/BookProduction/',
   gitHub: 'https://github.com/Josue0117/BookProduction/tree/master'
 }
