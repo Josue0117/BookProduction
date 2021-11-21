@@ -1,3 +1,47 @@
+// INDEX
+export const MY_HISTORY_MOBILE = 'Cuando tenía 19 años me vi obligado a dejar la carrera de arquitectura junto con mis sueños y aspiraciones para trabajar y generar suficiente dinero para mantenerme. Entonces me di cuenta que el trabajo representa una parte sumamente significativa de la vida adulta.'
+export const LANGUAGES_SECTION_MOBILE = {
+  title: 'Lenguajes de programación',
+  values: [
+    {
+      name: 'C',
+      src: 'c',
+      domain: 'high',
+      isASalesforceSkill: false
+    },
+    {
+      name: 'Javascript',
+      src: 'javascript',
+      domain: 'high',
+      isASalesforceSkill: false
+    },
+    {
+      name: 'PHP',
+      src: 'php',
+      domain: 'high',
+      isASalesforceSkill: false
+    },
+    {
+      name: 'Java',
+      src: 'java',
+      domain: 'medium',
+      isASalesforceSkill: false
+    },
+    {
+      name: 'Apex',
+      src: '',
+      domain: 'medium',
+      isASalesforceSkill: true
+    },
+    {
+      name: 'Ruby',
+      src: '',
+      domain: 'low',
+      isASalesforceSkill: false
+    }
+  ]
+}
+
 // NAVBAR
 export const NAVBAR_TITLE = 'Book'
 

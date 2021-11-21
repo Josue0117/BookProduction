@@ -53,8 +53,8 @@ export default {
 .container {
   position: absolute;
   width: 50%;
-  min-height: 400px;
-  top: 50px;
+  top: 150px;
+  height: 440px;
   box-shadow: 0 0 15px #938e7e;
   background: white;
   transition: 0.5s;
@@ -106,8 +106,6 @@ p.subtitle {
 @media (min-width: 600px) {
   .container {
     width: 300px;
-    height: 450px;
-    top: 150px;
 }
 
   .hero-image {

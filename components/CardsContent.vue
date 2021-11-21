@@ -1,11 +1,21 @@
 <template>
   <div class="content">
+
     <!-- CARD 1 -->
     <div class="card-1" v-if="cardNumber == 1">
       <div class="row">
         <Paragraph
+          class="desktop-version"
           :title="myHistoryTitle"
           :multi-paragraph-content="myHistoryContent"
+          context="dynamic"
+        />
+      </div>
+      <div class="row">
+        <Paragraph
+          class="mobile-version"
+          :title="myHistoryTitle"
+          :content="myHistoryMobile"
           context="dynamic"
         />
       </div>
@@ -19,8 +29,15 @@
     <!-- CARD 2 -->
     <div class="card-2" v-if="cardNumber == 2">
       <Paragraph
+        class="desktop-version"
         :title="languagesSection.title"
         :skills-list="languagesSection.values"
+        context="dynamic"
+      />
+      <Paragraph
+        class="mobile-version"
+        :title="languagesSectionMovile.title"
+        :skills-list="languagesSectionMovile.values"
         context="dynamic"
       />
     </div>
@@ -47,14 +64,15 @@
 </template>
 
 <script>
-import { PROGRAMMING_LANGUAGUES_URLS } from '@/constants-urls.js'
 import {
   MY_HISTORY_TITLE,
   MY_HISTORY_CONTENT,
+  MY_HISTORY_MOBILE,
   DOWNLOAD_BUTTON_TEXT,
   LANGUAGES_SECTION,
+  LANGUAGES_SECTION_MOBILE,
   PANDEMIC_SIMULATOR_TITLE,
-  CARD_VERSION_PS_CONTENT,
+  CARD_VERSION_PS_CONTENT
 } from '@/constants-static-texts.js'
 export default {
   props: {
@@ -67,9 +85,10 @@ export default {
     return {
       myHistoryTitle: MY_HISTORY_TITLE,
       myHistoryContent: MY_HISTORY_CONTENT,
+      myHistoryMobile: MY_HISTORY_MOBILE,
       buttonText: DOWNLOAD_BUTTON_TEXT,
       languagesSection: LANGUAGES_SECTION,
-      programmingLanguagesUrls: PROGRAMMING_LANGUAGUES_URLS,
+      languagesSectionMovile: LANGUAGES_SECTION_MOBILE,
       proyectTittle: PANDEMIC_SIMULATOR_TITLE,
       proyectDescription: CARD_VERSION_PS_CONTENT,
     }
@@ -78,6 +97,14 @@ export default {
 </script>
 
 <style scoped>
+.desktop-version {
+  display: none;
+}
+
+.mobile-version {
+  display: block;
+}
+
 .red-button {
   margin: 10%;
   padding-bottom: 6px;
@@ -101,6 +128,16 @@ export default {
 
 .proyect-img img {
   width: 100%;
-  padding: 10%;
+  padding: 5% 10% 0 10%;
+}
+
+@media (min-width: 576px) {
+  div.desktop-version {
+    display: block;
+  }
+
+  .mobile-version {
+    display: none;
+  }
 }
 </style>
