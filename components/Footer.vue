@@ -9,7 +9,7 @@
     <div class="contact">
       <div class="row">
         <div
-          class="col-md-12 col-lg-3"
+          class="col-md-12 col-lg-3 footer-block"
           v-for="contact in contactBlocksValues"
           v-bind:key="contact.title"
         >
@@ -22,7 +22,7 @@
             <div
               class="media-link-icon"
               v-for="mediaLink in mediaLinks"
-              v-bind:key="mediaLink"
+              v-bind:key="mediaLink.imageSrc"
             >
               <FooterLink 
                 :image-src="mediaLink.imageSrc"
