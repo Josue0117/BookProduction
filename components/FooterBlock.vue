@@ -12,11 +12,13 @@ export default {
   props: {
     title: {
       type: String,
-      default: '',
+      default: ''
     },
     values: {
       type: Array,
-      default: [],
+      default() {
+        return []
+      }
     },
   },
 }

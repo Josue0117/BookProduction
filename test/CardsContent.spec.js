@@ -2,11 +2,6 @@ import { shallowMount } from '@vue/test-utils'
 import CardsContent from '@/components/CardsContent.vue'
 
 describe('CardsContent', () => {
-  test('is a Vue instance', () => {
-    const wrapper = shallowMount(CardsContent)
-    expect(wrapper).toBeTruthy()
-  })
-
   function setupCardNumber (cardNumber) {
     return shallowMount(CardsContent, {
       propsData: {
@@ -17,6 +12,11 @@ describe('CardsContent', () => {
       }
     })
   }
+
+  test('is a Vue instance', () => {
+    const wrapper = shallowMount(CardsContent)
+    expect(wrapper).toBeTruthy()
+  })
 
   test('is rendering the correct card depending on the given value as prop', () => {
     const wrapper = setupCardNumber(1)
