@@ -55,7 +55,9 @@ export default {
     },
     skillsList: {
       type: Object,
-      default: []
+      default() {
+        return {}
+      }
     },
     content: {
       type: String,
@@ -67,7 +69,9 @@ export default {
     },
     multiParagraphContent: {
       type: Array,
-      default: []
+      default() {
+        return []
+      }
     }
   },
   data: () => {
