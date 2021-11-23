@@ -55,7 +55,7 @@ export default {
     },
     skillsList: {
       type: Object,
-      default: {}
+      default: []
     },
     content: {
       type: String,

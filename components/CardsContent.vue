@@ -43,7 +43,7 @@
     </div>
 
     <!-- CARD 3 -->
-    <div class="card-2" v-if="cardNumber == 3">
+    <div class="card-3" v-if="cardNumber == 3">
       <div class="row">
         <Paragraph
           :title="proyectTittle"
