@@ -13,7 +13,7 @@
           v-for="contact in contactBlocksValues"
           v-bind:key="contact.title"
         >
-          <FooterBlock :title="contact.title" :values="contact.values" />
+          <FooterBlock :block-title="contact.title" :block-values="contact.values" />
         </div>
         <div class=" col-lg-3"></div>
         <div class=" col-lg-3">

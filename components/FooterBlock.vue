@@ -1,7 +1,7 @@
 <template>
   <div class="content">
-    <p class="footer-block-tittle">{{ title }}</p>
-    <p v-for="value in values" v-bind:key="value" class="footer-block-value">
+    <p class="footer-block-tittle">{{ blockTitle }}</p>
+    <p v-for="value in blockValues" v-bind:key="value" class="footer-block-value">
       {{ value }}
     </p>
   </div>
@@ -10,11 +10,11 @@
 <script>
 export default {
   props: {
-    title: {
+    blockTitle: {
       type: String,
       default: ''
     },
-    values: {
+    blockValues: {
       type: Array,
       default() {
         return []
