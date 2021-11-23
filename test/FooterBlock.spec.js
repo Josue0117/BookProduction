@@ -10,8 +10,8 @@ describe('FooterBlock', () => {
   function populateFooterBlock (blockTitle, blockValues) {
     return shallowMount(FooterBlock, {
       propsData: {
-        title: blockTitle,
-        values: blockValues
+        blockTitle,
+        blockValues
       }
     })
   }
