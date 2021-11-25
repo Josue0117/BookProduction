@@ -10,13 +10,6 @@
             :content="skillsExplicationContent" 
             context="static-page"
           />
-          <p class="domain-value">
-            <ul>
-              <li><span class="high">{{ highSpan }}</span>{{ highContent }}</li>
-              <li><span class="medium">{{ mediumSpan }}</span>{{ mediumContent }}</li>
-              <li><span class="low">{{ lowSpan }}</span>{{ lowContent }}</li>
-            </ul>
-          </p>
           <Paragraph 
             :title="languagesSection.title" 
             :skills-list="languagesSection.values" 
@@ -158,16 +151,14 @@ div.paragraph-images:hover {
   transition: 0.5s;
 }
 
-div.paragraph-images:hover .high, 
 div.paragraph-images:hover .high {
-  background-color: green;
+  background-color: #6b6666;
   color: white
 }
 
-div.paragraph-images:hover .medium, 
 div.paragraph-images:hover .medium {
-  background-color: #FFB300;
-  color: black
+  background-color: #01a4ff;
+  color: white
 }
 
 div.paragraph-images:hover .low, 

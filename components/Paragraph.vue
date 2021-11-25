@@ -1,26 +1,26 @@
 <template>
   <div :class="'content ' + context">
     <div class="paragraph-title">
-      <span>{{ title }}</span>
+      <span class="title-span">{{ title }}</span>
     </div>
     <div class="line"></div>
     <div v-if="content != ''" class="paragraph-content">
-      <span>{{ content }}</span>
+      <span class="paragraph-content-span">{{ content }}</span>
     </div>
     <div
       v-else
       class="paragraph-content"
       v-for="paragraph in multiParagraphContent"
-      v-bind:key="paragraph"
+      v-bind:key="Object.keys(paragraph)[0]"
     >
-      <span v-if="paragraph.hasOwnProperty('normal')">{{ paragraph.normal }}</span>
+      <span v-if="paragraph.hasOwnProperty('normal')" class="normal-text">{{ paragraph.normal }}</span>
       <span v-else-if="context != 'dynamic'" class="strong-text">{{ paragraph.strong }}</span>
     </div>
     <div class="row">
       <div
         class="col-6 col-sm-3 col-lg-4 paragraph-images"
         v-for="skill in skillsList"
-        v-bind:key="skill"
+        v-bind:key="skill.name"
       >
         <img
           v-if="skill.src != ''"
@@ -53,35 +53,30 @@ export default {
       type: String,
       default: ''
     },
+    content: {
+      type: String,
+      default: ''
+    },
     skillsList: {
       type: Array,
       default() {
         return []
       }
     },
-    content: {
-      type: String,
-      default: ''
-    },
-    context: {
-      type: String,
-      default: ''
-    },
     multiParagraphContent: {
       type: Array,
       default() {
         return []
       }
+    },
+    context: {
+      type: String,
+      default: ''
     }
   },
   data: () => {
     return {
       hover: false,
-    }
-  },
-  computed: {
-    typeOfData: function (content) {
-      return typeof(content) 
     }
   }
 }

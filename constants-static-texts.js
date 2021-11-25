@@ -66,7 +66,7 @@ export const DOWNLOAD_BUTTON_TEXT = 'Descargar CV'
 // SKILLS
 export const TITLE_CARD_2 = 'Skills'
 export const SKILLS_EXPLICATION_TITLE = 'Herramientas que domino'
-export const SKILLS_EXPLICATION_CONTENT = 'A continuación se pueden ver las herramientas con las que he trabajado los últimos 4 años. Las clasifique en tres niveles de dominio: alto, medio y bajo. Favor de pasar el cursor sobre la herramienta deseada para ver el nivel de dominio.'
+export const SKILLS_EXPLICATION_CONTENT = 'A continuación se pueden ver las herramientas con las que he trabajado los últimos 4 años. Las clasifique en cuatro tipos de herramienta: lenguajes de programación, frameworks, lenguajes de consulta a bases de datos y gestores de versiones.'
 
 export const SKILLS_HIGH_SPAN = 'Alto: '
 export const SKILLS_HIGH_CONTENT = 'He utilizado esta herramienta en múltiples proyectos complejos y me siento cómodo usándola.'
@@ -99,7 +99,7 @@ export const LANGUAGES_SECTION = {
     {
       name: 'Java',
       src: 'java',
-      domain: 'medium',
+      domain: 'high',
       isASalesforceSkill: false
     },
     {
@@ -111,13 +111,13 @@ export const LANGUAGES_SECTION = {
     {
       name: 'Phyton',
       src: 'python',
-      domain: 'medium',
+      domain: 'high',
       isASalesforceSkill: false
     },
     {
       name: 'Ruby',
       src: 'ruby',
-      domain: 'low',
+      domain: 'high',
       isASalesforceSkill: false
     },
     {
@@ -152,37 +152,37 @@ export const FRAMEWORKS_SECTION = {
     {
       name: 'Django',
       src: 'django',
-      domain: 'medium',
+      domain: 'high',
       isASalesforceSkill: false
     },
     {
       name: 'Aura',
       src: '',
-      domain: 'low',
+      domain: 'medium',
       isASalesforceSkill: true
     },
     {
       name: 'LWC',
       src: '',
-      domain: 'low',
+      domain: 'medium',
       isASalesforceSkill: true
     },
     {
       name: 'Visualforce',
       src: '',
-      domain: 'low',
+      domain: 'medium',
       isASalesforceSkill: true
     },
     {
       name: 'Cypress',
       src: 'cypress',
-      domain: 'medium',
+      domain: 'high',
       isASalesforceSkill: false
     },
     {
       name: 'Jest',
       src: '',
-      domain: 'medium',
+      domain: 'high',
       isASalesforceSkill: false
     }
   ]
@@ -199,13 +199,13 @@ export const DATABASES_SECTION = {
     {
       name: 'SOQL',
       src: '',
-      domain: 'high',
+      domain: 'medium',
       isASalesforceSkill: true
     },
     {
       name: 'SOSL',
       src: '',
-      domain: 'low',
+      domain: 'medium',
       isASalesforceSkill: true
     }
   ]
@@ -233,7 +233,7 @@ export const PROTOTYPING_SECTION = {
     {
       name: 'Figma',
       src: '',
-      domain: 'medium',
+      domain: 'high',
       isASalesforceSkill: false
     },
     {
