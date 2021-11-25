@@ -1,7 +1,7 @@
 <template>
   <div class="skills-container">
     <div class="page-content">
-      <NavBar :title="navBarTitle" />
+      <NavBar />
       <div class="row skills-page">
         <div class="col-lg-1"></div>
         <div class="col-lg-5">
@@ -49,8 +49,6 @@
 
 <script>
 import {
-  NAVBAR_TITLE,
-  NAVBAR_SUBTITLE,
   SKILLS_EXPLICATION_TITLE,
   SKILLS_EXPLICATION_CONTENT,
   SKILLS_HIGH_SPAN,
@@ -67,7 +65,6 @@ import {
 export default {
   data: () => {
     return {
-      navBarTitle: NAVBAR_TITLE,
       skillsExplicationTitle: SKILLS_EXPLICATION_TITLE,
       skillsExplicationContent: SKILLS_EXPLICATION_CONTENT,
       highSpan: SKILLS_HIGH_SPAN,

@@ -1,7 +1,7 @@
 <template>
   <div class="projects-container">
     <div class="page-content">
-      <NavBar :title="navBarTitle" />
+      <NavBar />
 
       <!-- PANDEMIC SIMULATOR --->
       <div class="row">
@@ -75,7 +75,6 @@
 <script>
 import { SIMULATOR_LINKS, BOOK_LINKS } from '@/constants-urls.js'
 import { 
-  NAVBAR_TITLE,
   PANDEMIC_SIMULATOR_TITLE,
   PANDEMIC_SIMULATOR_CONTENT,
   BOOK_TITLE,
@@ -84,7 +83,6 @@ import {
 export default {
   data: () => {
     return {
-      navBarTitle: NAVBAR_TITLE,
       simulatorTitle: PANDEMIC_SIMULATOR_TITLE,
       simulatorContent: PANDEMIC_SIMULATOR_CONTENT,
       bookTitle: BOOK_TITLE,

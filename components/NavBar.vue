@@ -2,7 +2,7 @@
   <div class="content navbar-container">
     <nav class="navbar navbar-expand-lg">
       <div class="title background">
-        <p class="navbar-title">{{ title }}</p>
+        <p class="navbar-title">{{ navBarTitle }}</p>
       </div>
       <button class="navbar-toggler" @click="showMenu">
         <div class="toggler-icon"></div>
@@ -26,7 +26,7 @@
           </li>
           <li class="nav-item">
             <!--- TO DO: Make this navBar option be color:white if is the current page --->
-            <div v-bind:class="{selected: (this.$route.path === '/' + skillOptionText)}">
+            <div>
               <NuxtLink 
                 class="nav-link" 
                 to="/skills"
@@ -35,7 +35,7 @@
           </li>
           <li class="nav-item">
             <!--- TO DO: Make this navBar option be color:white if is the current page --->
-            <div v-bind:class="{selected: (this.$route.path === '/' + aboutOptionText)}">
+            <div>
               <NuxtLink 
                 class="nav-link" 
                 to="/about-me"
@@ -44,7 +44,7 @@
           </li>
           <li class="nav-item">
             <!--- TO DO: Make this navBar option be color:white if is the current page --->
-            <div v-bind:class="{selected: (this.$route.path === '/' + projectsOptionText)}">
+            <div>
               <NuxtLink 
                 class="nav-link" 
                 to="/projects"
@@ -59,6 +59,7 @@
 
 <script>
 import { 
+  NAVBAR_TITLE,
   ABOUT_ME_TITLE,
   TITLE_CARD_2,
   TITLE_CARD_3,
@@ -72,6 +73,7 @@ export default {
   },
   data: () => {
     return {
+      navBarTitle: NAVBAR_TITLE,
       skillOptionText: TITLE_CARD_2,
       aboutOptionText: ABOUT_ME_TITLE,
       projectsOptionText: TITLE_CARD_3
