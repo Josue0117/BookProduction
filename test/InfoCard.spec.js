@@ -23,11 +23,7 @@ describe('InfoCard', () => {
   }
 
   test('is a Vue instance', () => {
-    const wrapper = shallowMount(InfoCard, {
-      stubs: {
-        CardsContent: true
-      }
-    })
+    const wrapper = populateInfoCardContent()
     expect(wrapper).toBeTruthy()
   })
 
@@ -41,5 +37,19 @@ describe('InfoCard', () => {
     expect(headerImage.exists()).toBe(true)
     expect(title.text()).toBe(TITLE_CARD_1)
     expect(subtitle.text()).toBe(CARD_1_SUBTITLE)
+  })
+
+  test('is rendering the header of the "Skills" card correctly', () => {
+    const wrapper = populateInfoCardContent(2, TITLE_CARD_2)
+
+    const title = wrapper.find("p.title")
+    expect(title.text()).toBe(TITLE_CARD_2)
+  })
+
+  test('is rendering the header of the "Projects" card correctly', () => {
+    const wrapper = populateInfoCardContent(2, TITLE_CARD_3)
+
+    const title = wrapper.find("p.title")
+    expect(title.text()).toBe(TITLE_CARD_3)
   })
 })
