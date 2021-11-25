@@ -15,21 +15,21 @@
             :skills-list="languagesSection.values" 
             context="static-page"
           />
-        </div>
-        <div class="col-lg-5">
           <Paragraph
-            :title="frameworksSection.title"
-            :skills-list="frameworksSection.values"
+            :title="githubSection.title"
+            :skills-list="githubSection.values"
             context="static-page"
           />
+        </div>
+        <div class="col-lg-5">
           <Paragraph
             :title="databasesSection.title"
             :skills-list="databasesSection.values"
             context="static-page"
           />
           <Paragraph
-            :title="githubSection.title"
-            :skills-list="githubSection.values"
+            :title="frameworksSection.title"
+            :skills-list="frameworksSection.values"
             context="static-page"
           />
         </div>
