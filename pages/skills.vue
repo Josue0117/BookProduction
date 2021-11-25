@@ -170,7 +170,7 @@ div.paragraph-images:hover .low {
 .static-page .skill-without-logo {
   display: block;
   height: 45%;
-  margin-top: 30%;
+  margin-top: 35%;
   font-size: 25px;
   color: #24b9c4;
   font-weight: bolder;
