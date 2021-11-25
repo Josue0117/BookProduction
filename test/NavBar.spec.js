@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import NavBar from '@/components/NavBar.vue'
 import {
   NAVBAR_TITLE,
@@ -7,10 +7,14 @@ import {
   TITLE_CARD_3,
 } from '@/constants-static-texts.js'
 
+const localVue = createLocalVue()
+
 describe('NavBar', () => {
   let wrapper
   beforeEach(() => {
     wrapper = shallowMount(NavBar, {
+      localVue,
+      attachTo: document.body,
       data() {
         return {
           navBarTitle: NAVBAR_TITLE,
@@ -23,6 +27,10 @@ describe('NavBar', () => {
         NuxtLink: true
       }
     })
+  })
+
+  afterEach(() => {
+    wrapper.destroy();
   })
 
   test('is a Vue instance', () => {
@@ -41,6 +49,16 @@ describe('NavBar', () => {
     expect(skillOption.text()).toBe(TITLE_CARD_2)
     expect(aboutMeOption.text()).toBe(ABOUT_ME_TITLE)
     expect(projectsOption.text()).toBe(TITLE_CARD_3)
+  })
+  
+  test('has the toggler button and works correctly', (done) => {
+    expect(wrapper.find('.show').exists()).toBe(false)
     
+    const togglerButton = wrapper.find('button')
+    togglerButton.trigger('click')
+    localVue.nextTick(() => {
+      expect(wrapper.find('.show').exists()).toBe(true)
+      done()
+    })
   })
 })
