@@ -54,9 +54,9 @@ export default {
       default: ''
     },
     skillsList: {
-      type: Object,
+      type: Array,
       default() {
-        return {}
+        return []
       }
     },
     content: {

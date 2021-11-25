@@ -17,9 +17,6 @@
         <div class="row">
           <p class="title">{{ title }}</p>
         </div>
-        <div class="row subtitle">
-          <span>{{ subtitle }}</span>
-        </div>
       </div>
     </div>
     <CardsContent :cardNumber="cardNumber"/>
