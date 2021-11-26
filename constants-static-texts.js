@@ -61,7 +61,7 @@ export const MY_HISTORY_CONTENT = [
 export const IMPORTANT_TEXT = [
   'Hoy estoy seguro de que quiero poder infligir un cambio positivo significativo en la sociedad a través de la tecnología.',
 ]
-export const DOWNLOAD_BUTTON_TEXT = 'Ver CV'
+export const DOWNLOAD_BUTTON_TEXT = 'Descargar CV'
 
 // SKILLS
 export const TITLE_CARD_2 = 'Skills'
