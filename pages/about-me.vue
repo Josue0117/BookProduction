@@ -28,7 +28,7 @@
               />
             </div>
             <div class="col-12 red-button-container">
-              <a href="../CV.pdf" target="_blank">
+              <a href="../CV.pdf">
                 <button class="red-button">
                   {{ buttonText }}
                 </button>
