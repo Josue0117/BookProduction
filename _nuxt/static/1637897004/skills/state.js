@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002FBookProduction\u002F_nuxt\u002Fstatic\u002F1637897004",layout:"default",error:a,serverRendered:true,routePath:"\u002Fskills",config:{_app:{basePath:"\u002FBookProduction\u002F",assetsPath:"\u002FBookProduction\u002F_nuxt\u002F",cdnURL:a}}}}(null));
